@@ -1,1 +1,18 @@
 /* CSS declarations go here */
+
+.map-container, .pusher {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.gottagocontainer {
+	width: 100%;
+	height: 100%;
+}
+
+.gottagotopbar {
+	border-radius: 0!important;
+	margin-bottom: 0!important;
+}
