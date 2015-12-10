@@ -12,7 +12,11 @@
 	height: 100%;
 }
 
-.gottagotopbar {
-	border-radius: 0!important;
-	margin-bottom: 0!important;
+#gottago-topbar {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#gottago-topbar :hover {
+	cursor: pointer;
 }

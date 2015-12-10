@@ -3,19 +3,28 @@
 </head>
 
 <body>
+
 	{{> gottagomenu }}
 
 	<div class="pusher">
 
+		{{> topbar}}
 		{{> map}}
 	</div>
+
 </body>
 
+<template name="topbar">
+	<div id="gottago-topbar" class="ui menu inverted">
+		<div id="show-sidebar" class="ui item animated fade button toggler">
+			<i class="sidebar icon"></i>
+			<div class="visible content">GottaGo</div>
+			<div class="hidden content">Menu</div>
+		</div>
+	</div>
+</template>
+
 <template name="map">
-	<div id="show-sidebar" class="button toggler">
-        <i class="sidebar icon"></i>
-        Sidebar
-    </div>
 	<div class="map-container">
 
 		{{> googleMap name="map" options=mapOptions }}
@@ -24,23 +33,22 @@
 
 <template name="gottagomenu">
 	<div class="ui vertical menu sidebar gottago">
-	<a class="active teal item">
-    Inbox
-    <div class="ui teal pointing left label">1</div>
-  </a>
-  <a class="item">
-    Spam
-    <div class="ui label">51</div>
-  </a>
-  <a class="item">
-    Updates
-    <div class="ui label">1</div>
-  </a>
-  <div class="item">
-    <div class="ui transparent icon input">
-      <input type="text" placeholder="Search mail...">
-      <i class="search icon"></i>
-    </div>
-  </div>
+		<div class="item">
+			<div class="ui transparent icon input">
+				<input type="text" placeholder="Search...">
+				<i class="search icon"></i>
+			</div>
+		</div>
+		<a class="active teal item">
+			Closest facility
+		</a>
+		<a class="item">
+			My reported locations
+			<div class="ui label">51</div>
+		</a>
+		<a class="item">
+			Log in
+			<div class="ui label">1</div>
+		</a>
 	</div>
 </template>

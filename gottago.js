@@ -73,7 +73,7 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.map.events({
+  Template.topbar.events({
     'click #show-sidebar': function (event, template) {
       $('.menu.sidebar.gottago')
         .sidebar('setting', 'dimPage', false)
